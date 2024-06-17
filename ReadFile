@@ -1,12 +1,1 @@
-Compile the eBPF program using clang:
-clang -O2 -target bpf -c drop_tcp_packets_kern.c -o drop_tcp_packets_kern.o
-
-Install packages
-go get github.com/cilium/ebpf
-
-Compile the go program
-go build -o drop_tcp_packets main.go
-
-Run the program with the default port or specify a different port:
-sudo ./drop_tcp_packets
 
